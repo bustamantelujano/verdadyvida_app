@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:verdadyvida_app/contenido.dart';
+import 'package:verdadyvida_app/Donar.dart';
+import 'package:line_icons/line_icons.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -27,7 +29,7 @@ class _SwipeTabBarState extends State<Home> {
           // AppBar(title:Text("TITLE")),
           Contenido(),
           Container(color: Colors.black12),
-          Container(color: Colors.black26),
+          Donar(),
           Container(color: Colors.black38),
         ],
         onPageChanged: (index) {
@@ -45,7 +47,7 @@ class _SwipeTabBarState extends State<Home> {
           BottomNavigationBarItem(
             icon: Icon(
               Icons.subscriptions,
-              color: Colors.black45,
+              // color: Colors.black45,
               size: 24.0,
               semanticLabel: 'Contenido',
             ), 
@@ -56,7 +58,9 @@ class _SwipeTabBarState extends State<Home> {
               semanticLabel: 'Contenido',
             ), 
             title: Text("Contenido",
-                        style:TextStyle( color: Colors.black.withOpacity(0.65))
+                        style:TextStyle( 
+                          // color: Colors.black.withOpacity(0.65)
+                          )
                     )
           ),
                     BottomNavigationBarItem(
@@ -73,7 +77,9 @@ class _SwipeTabBarState extends State<Home> {
               semanticLabel: 'Noticias',
             ), 
             title: Text("Noticias",
-                        style:TextStyle( color: Colors.black.withOpacity(0.65))
+                        style:TextStyle( 
+                          // color: Colors.black.withOpacity(0.65)
+                          )
                     )
           ),
           
@@ -91,7 +97,9 @@ class _SwipeTabBarState extends State<Home> {
               semanticLabel: 'Hacer una donación',
             ), 
             title: Text("Donar",
-                        style:TextStyle( color: Colors.black.withOpacity(0.65))
+                        style:TextStyle( 
+                          // color: Colors.black.withOpacity(0.65)
+                          )
                     )
           ),
           
@@ -109,7 +117,9 @@ class _SwipeTabBarState extends State<Home> {
               semanticLabel: 'Pestaña de perfil',
             ), 
             title: Text("Perfil",
-                        style:TextStyle( color: Colors.black.withOpacity(0.65))
+                        style:TextStyle( 
+                          // color: Colors.black.withOpacity(0.65)
+                          )
                     )
           ),
         ],
